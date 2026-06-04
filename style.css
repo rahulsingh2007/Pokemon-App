@@ -37,13 +37,16 @@ body {
 
 button {
     border: none;
-    background: transparent;
+    border-radius: 20px;
+    padding: 7px;
+    background: white;
     cursor: pointer;
     font-size: 18px;
 }
 
 .card {
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 55vw;
     border-radius: 15px;
     overflow: hidden;
@@ -61,22 +64,121 @@ button {
 .upperImg img {
     width: 220px;
 }
-#pokemonName{
+
+#pokemonName {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-#typeDisplay{
+#typeDisplay {
+    margin: 15px 0 40px 0;
+}
+
+
+.type-badge {
     width: 90px;
-    border: none;
+    display: inline-block;
+    margin: 5px;
+    padding: 9px 5px;
     border-radius: 15px;
-    padding: 5px;
+    border: none;
     background-color: orange;
-    margin: 15px 0 40px 0 ;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .details {
     background-color: white;
-    height: 200px;
+    height: 75vh;
+    color: hsl(0, 0%, 50%);
+}
+
+.height-weight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding: 20px;
+}
+
+#height,
+#weight {
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#pokemonHeight,
+#pokemonWeight {
+    margin-top: 6px;
+    font-weight: bold;
+    font-size: 2rem;
+    color: black;
+}
+
+.abilities-stats {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.ability-badge {
+    display: inline-block;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: black;
+    background-color: hsl(0, 0%, 90%);
+}
+
+#abilities,
+#base-stat {
+    color: black;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+#base-stat {
+    margin: 15px 0 10px 0;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+#pokemonHp,
+#pokemonAtk,
+#pokemonDef,
+#pokemonSpAtk,
+#pokemonSpDef,
+#pokemonSpeed {
+    font-weight: bold;
+    color: black;
+}
+
+.hp-track,
+.atk-track,
+.def-track,
+.spAtk-track,
+.spDef-track,
+
+.speed-track {
+    margin: 10px 0;
+    width: 100%; 
+    background-color: #e5e7eb;
+    border-radius: 9999px;
+    height: 0.7rem;
+    overflow: hidden;
+}
+
+.hp-fill,
+.atk-fill,
+.def-fill,
+.spAtk-fill,
+.spDef-fill,
+.speed-fill {
+    background: linear-gradient(to right, hsl(51, 100%, 56%), hsl(45, 100%, 47%));
+    height: 0.7rem;
+    border-radius: 9999px;
+    transition: width 0.8s ease-out;
 }
