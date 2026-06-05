@@ -6,89 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokémon App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image.png" type="image/x-icon">
 </head>
 
 <body>
-
-    <form class="pokemonForm">
-        <div class="search-bar">
-            <input type="text" placeholder="Enter Pokémon name..." id="myInput">
-            <button type="submit">🔍</button>
-        </div>
-    </form>
-
-    <div class="card">
-        <div class="upperImg">
-            <img id="pokemonSprite" style="display:none" alt="Pokemon Sprite">
-            <p id="pokemonName">Search a Pokémon</p>
-            <p id="idDisplay"></p>
-            <p id="typeDisplay"></p>
-        </div>
-
-        <div class="details">
-            <div class="height-weight">
-                <div>
-                    <p id="height">HEIGHT</p>
-                    <p id="pokemonHeight"></p>
-                </div>
-                <div>
-                    <p id="weight">WEIGHT</p>
-                    <p id="pokemonWeight"></p>
-                </div>
+    <!-- ================= HEADER ================= -->
+    <div id="header">
+        <p id="myP" style="margin-top: 20px;">Pokédex</p>
+        <p>Search and discover Pokemon</p>
+        <form class="pokemonForm">
+            <div class="search-bar">
+                <input type="text" placeholder="Enter Pokémon name..." id="myInput">
+                <button type="submit">🔍</button>
             </div>
-            <div class="abilities-stats">
-                <p id="abilities">⚡︎ Abilities</p>
-                <p id="pokemonabilities"></p>
-                <div id="base-stats">
-                    <p id="base-stat">⛉ Base Stats</p>
-                    <div class="stats">
-                        <p>Hp</p>
-                        <p id="pokemonHp"></p>
-                    </div>
-                    <div class="hp-track">
-                        <div class="hp-fill"></div>
-                    </div>
-                    <div class="stats">
-                        <p>Attack</p>
-                        <p id="pokemonAtk"></p>
-                    </div>
-                    <div class="atk-track">
-                        <div class="atk-fill"></div>
-                    </div>
-                    <div class="stats">
-                        <p>Defense</p>
-                        <p id="pokemonDef"></p>
-                    </div>
-                    <div class="def-track">
-                        <div class="def-fill"></div>
-                    </div>
-                    <div class="stats">
-                        <p>Sp.atk</p>
-                        <p id="pokemonSpAtk"></p>
-                    </div>
-                    <div class="spAtk-track">
-                        <div class="spAtk-fill"></div>
-                    </div>
-                    <div class="stats">
-                        <p>Sp.def</p>
-                        <p id="pokemonSpDef"></p>
-                    </div>
-                    <div class="spDef-track">
-                        <div class="spDef-fill"></div>
-                    </div>
-                    <div class="stats">
-                        <p>Speed</p>
-                        <p id="pokemonSpeed"></p>
-                    </div>
-                    <div class="speed-track">
-                        <div class="speed-fill"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        </form>
     </div>
-
+    <!-- ================= LANDING TEXT ================= -->
+    <div id="landing-page">
+        <p id="myP2">Enter a Pokemon name to get started!</p>
+        <p id="myP3">Try: Pikachu, Charizard, Mewtwo, Eevee</p>
+    </div>
+    <!-- ================= POKEMON PAGE ================= -->
+    <div id="pokemon-page" style="display:none;">
+        <div class="card">
+            <div class="upperImg">
+                <img id="pokemonSprite" style="display:none" alt="Pokemon Sprite">
+                <p id="pokemonName">Search a Pokémon</p>
+                <p id="idDisplay"></p>
+                <p id="typeDisplay"></p>
+            </div>
+            <div class="details">
+                <div class="height-weight">
+                    <div>
+                        <p id="height">HEIGHT</p>
+                        <p id="pokemonHeight"></p>
+                    </div>
+                    <div>
+                        <p id="weight">WEIGHT</p>
+                        <p id="pokemonWeight"></p>
+                    </div>
+                </div>
+                <div class="abilities-stats">
+                    <p id="abilities">⚡︎ Abilities</p>
+                    <p id="pokemonabilities"></p>
+                    <div id="base-stats">
+                        <p id="base-stat">⛉ Base Stats</p>
+                        <div class="stats">
+                            <p>Hp</p>
+                            <p id="pokemonHp"></p>
+                        </div>
+                        <div class="hp-track">
+                            <div class="hp-fill"></div>
+                        </div>
+                        <div class="stats">
+                            <p>Attack</p>
+                            <p id="pokemonAtk"></p>
+                        </div>
+                        <div class="atk-track">
+                            <div class="atk-fill"></div>
+                        </div>
+                        <div class="stats">
+                            <p>Defense</p>
+                            <p id="pokemonDef"></p>
+                        </div>
+                        <div class="def-track">
+                            <div class="def-fill"></div>
+                        </div>
+                        <div class="stats">
+                            <p>Sp.atk</p>
+                            <p id="pokemonSpAtk"></p>
+                        </div>
+                        <div class="spAtk-track">
+                            <div class="spAtk-fill"></div>
+                        </div>
+                        <div class="stats">
+                            <p>Sp.def</p>
+                            <p id="pokemonSpDef"></p>
+                        </div>
+                        <div class="spDef-track">
+                            <div class="spDef-fill"></div>
+                        </div>
+                        <div class="stats">
+                            <p>Speed</p>
+                            <p id="pokemonSpeed"></p>
+                        </div>
+                        <div class="speed-track">
+                            <div class="speed-fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
