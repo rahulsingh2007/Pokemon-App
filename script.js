@@ -1,3 +1,5 @@
+// Pokemon App
+
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector(".pokemonForm");
     const input = document.getElementById("myInput");
