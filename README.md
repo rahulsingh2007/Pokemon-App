@@ -14,79 +14,32 @@
 
 ## 📸 Screenshots
 
-### 🏠 Landing UI
-The first screen users see — a clean, inviting homepage with a glassmorphic search bar and one-click suggestion chips for popular Pokémon.
+Here is a visual walkthrough of the three primary user interface states:
 
-> The background transitions dynamically to match the searched Pokémon's primary type color.
+### 1. Initial UI (Landing View)
+> Clean and minimal search interface welcoming the user to look up any city.
 
-```
-┌─────────────────────────────────────────────────────┐
-│                                                     │
-│                    🏠 Pokédex                        │
-│              Search and discover Pokémon            │
-│                                                     │
-│       [ Enter Pokémon name or ID...    🔍 ]          │
-│                                                     │
-│         Try searching for:                          │
-│  ⚡ Pikachu  🔥 Charizard  🔮 Mewtwo  ✨ Eevee  👻 Gengar │
-│                                                     │
-└─────────────────────────────────────────────────────┘
-```
+<div align="center">
+  <img src="screenshots/initial-ui.png" alt="Pokemon - Initial UI State" width="850"/>
+</div>
 
----
+<br/>
 
-### 🔍 Search / Pokémon Card UI
-After a successful search, the landing page is replaced by an animated Pokémon card. The **entire page background**, the card header gradient, and stat bars all dynamically adapt to the Pokémon's primary type color.
+### 2. After Searching (Weather Forecast View)
+> Comprehensive weather card displaying temperature, condition icon, and a detailed 6-metric atmospheric grid.
 
-```
-┌────────────────────────────────────────┐
-│  ┌──────────────────────────────────┐  │
-│  │   [Gradient Header - Type Color] │  │
-│  │          🖼️ Sprite Image          │  │
-│  │        Charizard   #006           │  │
-│  │     [ FIRE ]  [ FLYING ]          │  │
-│  ├──────────────────────────────────┤  │
-│  │  HEIGHT      │     WEIGHT         │  │
-│  │   1.7m       │      90.5kg        │  │
-│  ├──────────────────────────────────┤  │
-│  │ ⚡ Abilities                       │  │
-│  │  blaze  solar-power               │  │
-│  │                                   │  │
-│  │ ⛉ Base Stats                      │  │
-│  │ Hp      78  ████████░░░░░░░        │  │
-│  │ Attack  84  █████████░░░░░         │  │
-│  │ Defense 78  ████████░░░░░░░        │  │
-│  │ Sp.atk 109  ████████████░░░        │  │
-│  │ Sp.def  85  █████████░░░░░         │  │
-│  │ Speed  100  ██████████░░░░         │  │
-│  └──────────────────────────────────┘  │
-└────────────────────────────────────────┘
-```
+<div align="center">
+  <img src="screenshots/pokemon-result.png" alt="Pokemon - Pokemon Result View" width="850"/>
+</div>
 
----
+<br/>
 
-### ❌ Error UI
-When a Pokémon is not found (typo, invalid name, or network issue), a polished animated error card appears with a context-aware message and quick-access suggestion chips — no disruptive `alert()` popups.
+### 3. Error State (Invalid City / Network Issue)
+> Informative and user-friendly error card alerting the user when a city cannot be found or invalid input is given.
 
-```
-┌─────────────────────────────────────────┐
-│                                         │
-│         ⚫ [Greyed Pokéball Badge]        │
-│                                         │
-│       ❌  Pokémon Not Found              │
-│                                         │
-│   We couldn't find "xyzfake123".         │
-│   Check the spelling or try a Pokédex   │
-│   number (e.g. 25 for Pikachu).         │
-│                                         │
-│   TRY SEARCHING FOR:                    │
-│  ⚡ Pikachu  🔥 Charizard  🔮 Mewtwo   │
-│         ✨ Eevee  👻 Gengar             │
-│                                         │
-└─────────────────────────────────────────┘
-```
-
-> Connection errors and server errors show distinct, tailored messages.
+<div align="center">
+  <img src="screenshots/error-state.png" alt="Pokemon - Error State View" width="850"/>
+</div>
 
 ---
 

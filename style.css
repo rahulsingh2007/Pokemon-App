@@ -401,7 +401,8 @@ body {
 
 .details {
     background-color: white;
-    height: 75vh;
+    min-height: fit-content;
+    padding-bottom: 24px;
     color: hsl(0, 0%, 50%);
 }
 
@@ -493,3 +494,254 @@ body {
     border-radius: 9999px;
     transition: width 0.8s ease-out;
 }
+
+/* ================= RESPONSIVE ================= */
+
+/* --- Tablet (≤768px) --- */
+@media (max-width: 768px) {
+    #myP {
+        font-size: 2.8rem;
+    }
+
+    .search-bar {
+        width: min(80vw, 520px);
+    }
+
+    .card {
+        width: min(88vw, 700px);
+    }
+
+    .upperImg img {
+        width: 180px;
+    }
+
+    #pokemonName {
+        font-size: 2rem;
+    }
+
+    #pokemonHeight,
+    #pokemonWeight {
+        font-size: 1.6rem;
+    }
+
+    #abilities,
+    #base-stat {
+        font-size: 1.25rem;
+    }
+}
+
+/* --- Small Tablet / Large Phone (≤640px) --- */
+@media (max-width: 640px) {
+    #myP {
+        font-size: 2.2rem;
+        margin-top: 16px;
+    }
+
+    body {
+        padding: 0 8px;
+    }
+
+    .search-bar {
+        width: 90vw;
+        margin-top: 28px;
+    }
+
+    #landing-page {
+        margin-top: 36px;
+    }
+
+    .suggestion-chips {
+        max-width: 90vw;
+    }
+
+    .card {
+        width: 92vw;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        border-radius: 12px;
+    }
+
+    .upperImg img {
+        width: 155px;
+    }
+
+    #pokemonName {
+        font-size: 1.75rem;
+    }
+
+    #typeDisplay {
+        margin: 10px 0 28px 0;
+    }
+
+    .height-weight {
+        padding: 14px 16px;
+    }
+
+    #height,
+    #weight {
+        margin-top: 20px;
+        font-size: 11px;
+    }
+
+    #pokemonHeight,
+    #pokemonWeight {
+        font-size: 1.35rem;
+    }
+
+    .abilities-stats {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    #abilities,
+    #base-stat {
+        font-size: 1.1rem;
+    }
+
+    .ability-badge {
+        font-size: 0.8rem;
+        padding: 4px 8px;
+    }
+
+    .error-card {
+        width: 90vw;
+        padding: 28px 18px;
+    }
+}
+
+/* --- Mobile (≤480px) --- */
+@media (max-width: 480px) {
+    #myP {
+        font-size: 1.85rem;
+    }
+
+    #header > p:not(#myP) {
+        font-size: 0.85rem;
+        text-align: center;
+        padding: 0 12px;
+    }
+
+    .search-bar {
+        width: 94vw;
+        height: 46px;
+        margin-top: 20px;
+    }
+
+    #myInput {
+        font-size: 14px;
+        padding-left: 12px;
+    }
+
+    .search-bar button {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+
+    .card {
+        width: 96vw;
+        border-radius: 10px;
+    }
+
+    .upperImg img {
+        width: 130px;
+    }
+
+    #pokemonName {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    #idDisplay {
+        font-size: 0.9rem;
+    }
+
+    #typeDisplay {
+        margin: 8px 0 20px 0;
+    }
+
+    .type-badge {
+        width: 76px;
+        font-size: 10px;
+        padding: 7px 4px;
+        border-radius: 10px;
+    }
+
+    .height-weight {
+        padding: 10px 12px;
+        gap: 8px;
+    }
+
+    #height,
+    #weight {
+        margin-top: 14px;
+        font-size: 10px;
+    }
+
+    #pokemonHeight,
+    #pokemonWeight {
+        font-size: 1.15rem;
+    }
+
+    .abilities-stats {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    #abilities,
+    #base-stat {
+        font-size: 1rem;
+    }
+
+    #base-stat {
+        margin: 10px 0 8px 0;
+    }
+
+    .ability-badge {
+        font-size: 0.75rem;
+        padding: 3px 7px;
+    }
+
+    .stats p {
+        font-size: 0.85rem;
+    }
+
+    .hp-track,
+    .atk-track,
+    .def-track,
+    .spAtk-track,
+    .spDef-track,
+    .speed-track {
+        height: 0.55rem;
+        margin: 7px 0;
+    }
+
+    .hp-fill,
+    .atk-fill,
+    .def-fill,
+    .spAtk-fill,
+    .spDef-fill,
+    .speed-fill {
+        height: 0.55rem;
+    }
+
+    .suggestion-chip {
+        font-size: 0.78rem;
+        padding: 5px 11px;
+    }
+
+    #myP2 {
+        font-size: 0.95rem;
+        margin-top: 36px;
+        padding: 0 16px;
+        text-align: center;
+    }
+
+    .details {
+        padding-bottom: 16px;
+    }
+
+    #pokemon-page {
+        align-items: flex-start;
+        padding-top: 16px;
+    }
+}
