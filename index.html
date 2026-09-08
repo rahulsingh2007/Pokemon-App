@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokémon App</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="image.png" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="Poké_Ball_icon.svg">
+    <link rel="shortcut icon" href="Poké_Ball_icon.svg">
 </head>
 
 <body>
@@ -16,15 +17,50 @@
         <p>Search and discover Pokemon</p>
         <form class="pokemonForm">
             <div class="search-bar">
-                <input type="text" placeholder="Enter Pokémon name..." id="myInput">
-                <button type="submit">🔍</button>
+                <input type="text" placeholder="Enter Pokémon name or ID..." id="myInput" autocomplete="off">
+                <button type="submit" id="searchBtn" aria-label="Search Pokémon">🔍</button>
             </div>
+            <div id="search-feedback" class="search-feedback" style="display:none;"></div>
         </form>
     </div>
     <!-- ================= LANDING TEXT ================= -->
     <div id="landing-page">
-        <p id="myP2">Enter a Pokemon name to get started!</p>
-        <p id="myP3">Try: Pikachu, Charizard, Mewtwo, Eevee</p>
+        <p id="myP2">Enter a Pokémon name or number to get started!</p>
+        <div class="suggestions">
+            <p id="myP3">Try searching for:</p>
+            <div class="suggestion-chips">
+                <button type="button" class="suggestion-chip" data-name="pikachu">⚡ Pikachu</button>
+                <button type="button" class="suggestion-chip" data-name="charizard">🔥 Charizard</button>
+                <button type="button" class="suggestion-chip" data-name="mewtwo">🔮 Mewtwo</button>
+                <button type="button" class="suggestion-chip" data-name="eevee">✨ Eevee</button>
+                <button type="button" class="suggestion-chip" data-name="gengar">👻 Gengar</button>
+            </div>
+        </div>
+    </div>
+    <!-- ================= LOADING PAGE ================= -->
+    <div id="loading-page" style="display:none;">
+        <div class="pokeball-spinner"></div>
+        <p id="loading-text">Searching the Pokédex...</p>
+    </div>
+    <!-- ================= ERROR PAGE ================= -->
+    <div id="error-page" style="display:none;">
+        <div class="error-card">
+            <div class="error-icon-box">
+                <div class="error-pokeball"></div>
+            </div>
+            <h2 id="errorTitle">Pokémon Not Found</h2>
+            <p id="errorMessage">We couldn't find that Pokémon. Please check the spelling or try a Pokédex number.</p>
+            <div class="suggestions">
+                <p class="try-text">Try searching for:</p>
+                <div class="suggestion-chips">
+                    <button type="button" class="suggestion-chip" data-name="pikachu">⚡ Pikachu</button>
+                    <button type="button" class="suggestion-chip" data-name="charizard">🔥 Charizard</button>
+                    <button type="button" class="suggestion-chip" data-name="mewtwo">🔮 Mewtwo</button>
+                    <button type="button" class="suggestion-chip" data-name="eevee">✨ Eevee</button>
+                    <button type="button" class="suggestion-chip" data-name="gengar">👻 Gengar</button>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- ================= POKEMON PAGE ================= -->
     <div id="pokemon-page" style="display:none;">
