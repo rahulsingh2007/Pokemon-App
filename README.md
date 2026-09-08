@@ -17,7 +17,7 @@
 Here is a visual walkthrough of the three primary user interface states:
 
 ### 1. Initial UI (Landing View)
-> Clean and minimal search interface welcoming the user to look up any city.
+> Clean and minimal search interface welcoming the user to look know about pokemon.
 
 <div align="center">
   <img src="screenshots/initial-ui.png" alt="Pokemon - Initial UI State" width="850"/>
@@ -25,8 +25,8 @@ Here is a visual walkthrough of the three primary user interface states:
 
 <br/>
 
-### 2. After Searching (Weather Forecast View)
-> Comprehensive weather card displaying temperature, condition icon, and a detailed 6-metric atmospheric grid.
+### 2. After Searching (Pokemon Detail View)
+> Comprehensive pokemon detail card displaying height, weight, abilites, and base-stats.
 
 <div align="center">
   <img src="screenshots/pokemon-result.png" alt="Pokemon - Pokemon Result View" width="850"/>
@@ -34,8 +34,8 @@ Here is a visual walkthrough of the three primary user interface states:
 
 <br/>
 
-### 3. Error State (Invalid City / Network Issue)
-> Informative and user-friendly error card alerting the user when a city cannot be found or invalid input is given.
+### 3. Error State (Invalid Pokemon Name / Network Issue)
+> Informative and user-friendly error card alerting the user when a pokemon cannot be found or invalid input is given.
 
 <div align="center">
   <img src="screenshots/error-state.png" alt="Pokemon - Error State View" width="850"/>
